@@ -1,4 +1,4 @@
-# Migrar BD MySQL o MariaDB
+# Migrar BD MySQL o MariaDB usando NodeJS
 
 Aplicación que permite migrar una BD desde un servidor a otro
 
@@ -11,7 +11,7 @@ cp -rf env-example .env
 
 Instalar dependencias
 ```
-npn install
+npm install
 ```
 
 ## Exportar una BD a un archivo sql
