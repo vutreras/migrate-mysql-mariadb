@@ -1,0 +1,15 @@
+{
+  "name": "migrate-mysql-mariadb",
+  "version": "1.0.0",
+  "description": "Aplicacion para migrar base de datos MySQL o MariaDB",
+  "scripts": {
+    "db-export": "node dbExport.js",
+    "db-import": "node dbImport.js"
+  },
+  "author": "Victor Utreras J.",
+  "license": "MIT",
+  "dependencies": {
+    "mysqldump": "^3.2.0",
+    "mysql-import": "^5.0.21"
+  }
+}

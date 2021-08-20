@@ -1,0 +1,34 @@
+.vscode
+.idea
+
+## OSX
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+.eslintcache
+
+# Thumbnails
+._*
+
+## Linux
+*~
+
+## Windows
+# Windows thumbnail cache files
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+.env
+*.sql
+package-lock.json
+node_modules/
+
+dockers/mysql
