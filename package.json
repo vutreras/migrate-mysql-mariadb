@@ -10,6 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "mysqldump": "^3.2.0",
-    "mysql-import": "^5.0.21"
+    "mysql-import": "^5.0.21",
+    "mysql2-import": "^5.0.22"
   }
 }

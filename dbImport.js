@@ -12,7 +12,7 @@ console.log('config', {...config, password: '*************'});
 
 const {host, user, password, database, port} = config;
 
-const Importer = require('mysql-import');
+const Importer = require('mysql2-import');
 const importer = new Importer({host, user, password, database, port});
 
 // New onProgress method, added in version 5.0!
