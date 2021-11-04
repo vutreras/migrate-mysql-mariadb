@@ -5,6 +5,7 @@ export DB_EXPORT_PASSWORD="app1"
 export DB_EXPORT_DATABASE="app1"
 export DB_EXPORT_PORT=3307
 export DB_EXPORT_DUMP_FILE="./dump.sql"
+export DB_EXPORT_DROP_IF_EXIST=false
 
 export DB_IMPORT_HOST="localhost"
 export DB_IMPORT_USER="root"

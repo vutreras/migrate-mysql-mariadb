@@ -5,7 +5,8 @@ const config = {
   password: process.env.DB_EXPORT_PASSWORD || '',
   database: process.env.DB_EXPORT_DATABASE || '',
   port: process.env.DB_EXPORT_PORT || 3306,
-  dumpFile: process.env.DB_EXPORT_DUMP_FILE || './dump.sql'
+  dumpFile: process.env.DB_EXPORT_DUMP_FILE || './dump.sql',
+  dropIfExist: process.env.DB_EXPORT_DROP_IF_EXIST || false
 };
 
 console.log('config', {...config, password: '*************'});
@@ -17,4 +18,11 @@ const mysqldump = require('mysqldump');
 mysqldump({
   connection: {host, user, password, database, port},
   dumpToFile: config.dumpFile,
+  dump: {
+    schema: {
+      table: {
+        dropIfExist: config.dropIfExist
+      }
+    }
+  }
 });
